@@ -299,7 +299,7 @@ export default function Home() {
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="text-4xl font-bold mb-6 text-[var(--color-yellow)]">Get in Touch</h2>
-            <p className="text-xl text-white mb-8">We're ready to serve your fuel and lubricant needs.</p>
+            <p className="text-xl text-white mb-8">We`&apos;`re ready to serve your fuel and lubricant needs.</p>
             <div className="space-y-4 text-white">
               <p className="flex items-center gap-3">
                 <span className="text-2xl">📍</span>
