@@ -44,8 +44,8 @@ export default function About() {
               </h2>
               <p className="text-lg leading-relaxed text-gray-700">
                 As a youth-owned and black-owned enterprise, Bilacore Petroleums PTY LTD 
-                represents the future of South Africa's energy sector. Based in Lulekani, 
-                Phalaborwa, we've established ourselves as a trusted name in fuel and 
+                represents the future of South Africa`&apos;`s energy sector. Based in Lulekani, 
+                Phalaborwa, we`&apos;`ve established ourselves as a trusted name in fuel and 
                 lubricants supply across the Limpopo province.
               </p>
               <div className="grid grid-cols-2 gap-6">
