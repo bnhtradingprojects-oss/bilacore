@@ -1,14 +1,33 @@
 @import "tailwindcss";
 
+
 :root {
+  /* Enhanced contrast base colors */
   --color-black: #000000;
-  --color-red: #F42F38;  /* Darker red for better contrast on light backgrounds */
-  --color-yellow: #FFD401;  /* Darker yellow for better contrast on light backgrounds */
-  --color-yellow-light: #ffff00;  /* Original yellow for dark backgrounds */
+  --color-red: #D91E24;  /* Darker red for better contrast */
+  --color-yellow: #FFB800;  /* Adjusted for better contrast on dark */
+  --color-yellow-light: #FFD700;  /* More vibrant */
+  --color-yellow-dark: #CC9600;  /* Darker for better contrast */
   --color-white: #FFFFFF;
-  --color-dark-grey: #555555;
+  --color-dark-grey: #1A1A1A;
+  --color-light-grey: #F8F8F8;
   --background: var(--color-white);
-  --foreground: #171717;
+  --foreground: #000000;  /* Pure black for maximum contrast */
+  
+  /* Enhanced Design Variables */
+  --primary-gradient: linear-gradient(135deg, var(--color-yellow) 0%, var(--color-yellow-dark) 100%);
+  --dark-gradient: linear-gradient(135deg, var(--color-black) 0%, var(--color-dark-grey) 100%);
+  --glass-bg: rgba(255, 255, 255, 0.15);  /* Increased opacity */
+  --glass-border: rgba(255, 255, 255, 0.1);  /* Increased opacity */
+  --glass-dark-bg: rgba(0, 0, 0, 0.75);  /* New dark glass background */
+  --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);  /* Stronger shadow */
+  
+  /* Contrast-specific variables */
+  --text-on-dark: #FFFFFF;
+  --text-on-light: #000000;
+  --text-on-yellow: #000000;
+  --link-color: #B38600;  /* Dark enough for contrast */
+  --button-hover: #E6A500;  /* Visible hover state */
 }
 
 @theme inline {
@@ -20,18 +39,97 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --color-black: #0a0a0a;
-    --color-white: #ededed;
-    --color-dark-grey: #222222;
-    --color-yellow: #FFD401;  
-    --color-red: #F42F38;  
+    --background: #000000;
+    --foreground: #FFFFFF;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-dark-grey: #1A1A1A;
+    --color-yellow: #FFB800;
+    --color-yellow-light: #FFD700;
+    --color-yellow-dark: #CC9600;
+    --color-red: #FF3B3B;
+    --glass-bg: rgba(0, 0, 0, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.15);
+    --link-color: #FFD700;
+    --text-on-dark: #FFFFFF;
+    --text-on-light: #000000;
+    --text-on-yellow: #000000;
   }
 }
 
+/* High Contrast Utility Classes */
+.glass-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(8px);
+}
+
+.glass-button {
+  background: var(--glass-dark-bg);
+  border: 1px solid var(--glass-border);
+  color: var(--text-on-dark);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-high-contrast {
+  color: var(--text-on-dark);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.text-high-contrast-light {
+  color: var(--text-on-light);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.link-contrast {
+  color: var(--link-color);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.link-contrast:hover {
+  color: var(--color-yellow-light);
+}
+
+.button-contrast {
+  background: var(--color-yellow);
+  color: var(--text-on-yellow);
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.button-contrast:hover {
+  background: var(--button-hover);
+}
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(var(--color-yellow), 0.3);
+}
+
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 8px rgba(var(--color-yellow), 0.4));
+}
+/* Improved Background */
 body {
-  background: var(--background);
+  background-image: url('/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  position: relative;
+  line-height: 1.6;
+  letter-spacing: 0.015em;
 }
+
+/* body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 217, 0, 0.95);
+  z-index: -1;
+} */
