@@ -5,10 +5,10 @@ import Image from "next/image";
 export default function TeamSection() {
   const team = [
     {
-      name: "Wandile Bila",
+      name: "Mr Wandile Bila",
       role: "CEO & Founder",
       image: "/user/Founder.png",
-      bio: "With over 15 years in the petroleum industry, John leads our vision for excellence."
+      bio: "With over 5 years in the petroleum industry, John leads our vision for excellence."
     },
   ];
 
