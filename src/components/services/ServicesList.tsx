@@ -51,7 +51,13 @@ export default function ServicesList() {
   ];
 
   return (
-    <section id="explore" className="py-24 bg-gradient-to-br from-white via-gray-50 to-white">
+     <section className="py-24 px-4  text-white relative overflow-hidden">
+      {/* Decorative Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-[radial-gradient(circle_at_0%_0%,_var(--color-yellow)_0,_transparent_50%)] opacity-20" />
+        <div className="absolute bottom-0 right-0 w-full h-1/2 bg-[radial-gradient(circle_at_100%_100%,_var(--color-yellow-dark)_0,_transparent_50%)] opacity-20" />
+        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+      </div>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,7 +82,7 @@ export default function ServicesList() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
-              className="glass-card group hover:scale-105 transition-all duration-500"
+              className="glass-card group rounded-md hover:scale-105 transition-all duration-500"
             >
               <div className="relative p-8">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl transform translate-x-8 -translate-y-8" />

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="relative py-24 px-4 overflow-hidden bg-[var(--glass-dark-bg)]">
+    <section id="contact" className="relative py-24 px-4 overflow-hidden ">
       {/* Modern gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-[var(--color-dark-grey)] to-black"></div>
       
