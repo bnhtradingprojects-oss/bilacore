@@ -54,7 +54,7 @@ export default function TeamSection() {
               transition={{ delay: index * 0.2, duration: 0.8 }}
               className="group"
             >
-              <div className="relative    rounded-2xl overflow-hidden glass-card p-0 mb-8 border border-[var(--glass-border)] shadow-xl">
+              <div className="relative    rounded-2xl overflow-hidden p-0 mb-8 border border-[var(--glass-border)] shadow-xl">
                 <Image
                   src={member.image}
                   alt={member.name}
