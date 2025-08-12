@@ -7,7 +7,10 @@ import Navbar from "@/components/Navbar";
 const geist = Geist({
   subsets: ["latin"],
 });
-
+export const metadata: Metadata = {
+  title: 'Bilacore Petroleum',
+  description: 'bilacore petroleum pty ltd, providing quality petroleum products and services',
+}
 export default function RootLayout({
   children,
 }: Readonly<{
