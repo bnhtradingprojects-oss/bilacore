@@ -5,23 +5,11 @@ import Image from "next/image";
 export default function TeamSection() {
   const team = [
     {
-      name: "John Doe",
+      name: "Wandile Bila",
       role: "CEO & Founder",
-      image: "/person.jpg",
+      image: "/user/Founder.png",
       bio: "With over 15 years in the petroleum industry, John leads our vision for excellence."
     },
-    {
-      name: "Jane Smith",
-      role: "Operations Director",
-      image: "/person.jpg",
-      bio: "Expert in logistics and supply chain management, ensuring smooth delivery operations."
-    },
-    {
-      name: "Mike Johnson",
-      role: "Technical Manager",
-      image: "/person.jpg",
-      bio: "Specialized in industrial equipment maintenance and quality control."
-    }
   ];
 
   return (
@@ -66,12 +54,13 @@ export default function TeamSection() {
               transition={{ delay: index * 0.2, duration: 0.8 }}
               className="group"
             >
-              <div className="relative  h-63   rounded-2xl overflow-hidden glass-card p-2 mb-8 border border-[var(--glass-border)] shadow-xl">
+              <div className="relative    rounded-2xl overflow-hidden glass-card p-0 mb-8 border border-[var(--glass-border)] shadow-xl">
                 <Image
                   src={member.image}
                   alt={member.name}
-                  fill
-                  className="object-cover rounded-xl transition-all duration-500 group-hover:scale-110"
+                  width={300}
+                  height={300}
+                  className="object-fill rounded-xl transition-all duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
