@@ -8,7 +8,7 @@ export default function TeamSection() {
       name: "Mr Wandile Bila",
       role: "CEO & Founder",
       image: "/user/Founder.png",
-      bio: "With over 5 years in the petroleum industry, John leads our vision for excellence."
+      bio: "With over 5 years in the petroleum industry, Mr Wandile Bila leads our vision for excellence."
     },
   ];
 
