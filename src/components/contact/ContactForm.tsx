@@ -123,12 +123,7 @@ export default function ContactForm() {
               </div>
               <div className="absolute bottom-0 right-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl" />
             </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
+
               <form onSubmit={handleSubmit} className="glass-card p-8 rounded-2xl relative overflow-hidden">
                 <div className="relative z-10 space-y-6">
                   <div>
@@ -140,7 +135,7 @@ export default function ContactForm() {
                       name="fullName"
                       value={formData.fullName}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-white/50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-[var(--color-yellow)] focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 bg-white/50 text-black border border-yellow-200 rounded-xl focus:ring-2 focus:ring-[var(--color-yellow)] focus:border-transparent transition-all duration-300"
                       required
                       disabled={isSubmitting}
                     />
@@ -219,7 +214,7 @@ export default function ContactForm() {
                 <div className="absolute top-0 left-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl" />
                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl" />
               </form>
-            </motion.div>
+          
           </div>
         </div>
       </div>

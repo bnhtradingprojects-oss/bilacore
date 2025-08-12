@@ -35,7 +35,13 @@ export default function ProductGrid() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+   <section className="py-24 px-4  text-white relative overflow-hidden">
+      {/* Decorative Background Elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-[radial-gradient(circle_at_0%_0%,_var(--color-yellow)_0,_transparent_50%)] opacity-20" />
+        <div className="absolute bottom-0 right-0 w-full h-1/2 bg-[radial-gradient(circle_at_100%_100%,_var(--color-yellow-dark)_0,_transparent_50%)] opacity-20" />
+        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+      </div>
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8">
           {products.map((product, index) => (
@@ -45,7 +51,7 @@ export default function ProductGrid() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
-              className="bg-white rounded-xl shadow-lg overflow-hidden group"
+              className="glass-card rounded-xl shadow-lg overflow-hidden group"
             >
               <div className="relative h-64">
                 <Image
@@ -59,7 +65,7 @@ export default function ProductGrid() {
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-black">{product.name}</h3>
+                <h3 className="text-2xl font-bold mb-3">{product.name}</h3>
                 <p className="text-gray-200 mb-4">{product.description}</p>
                 <div className="space-y-2">
                   <h4 className="font-semibold text-black">Key Features:</h4>
