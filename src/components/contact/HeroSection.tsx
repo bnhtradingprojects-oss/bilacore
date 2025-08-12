@@ -35,7 +35,7 @@ export default function HeroSection() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.8 }}
           >
-            Let's discuss how we can power your business forward with our premium fuel solutions
+            Let&apos;s discuss how we can power your business forward with our premium fuel solutions
           </motion.p>
           <motion.div
             className="flex flex-wrap gap-4 justify-center items-center mt-8"

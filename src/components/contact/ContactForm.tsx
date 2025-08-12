@@ -55,10 +55,10 @@ export default function ContactForm() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">Let's Connect</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gradient">Let&apos;s Connect</h2>
             <div className="h-1 w-20 bg-[var(--color-yellow)] mx-auto mb-8" />
             <p className="text-xl text-gray-200 max-w-2xl mx-auto">
-              Ready to elevate your fuel solutions? We're here to help you every step of the way.
+              Ready to elevate your fuel solutions? We&apos;re here to help you every step of the way.
             </p>
           </motion.div>
           <div className="grid md:grid-cols-2 gap-12 items-start">
@@ -184,7 +184,7 @@ export default function ContactForm() {
                   </div>
                   {submitStatus === "success" && (
                     <div className="text-green-500 text-sm">
-                      Thank you for your message! We'll get back to you soon.
+                      Thank you for your message! We&apos;ll get back to you soon.
                     </div>
                   )}
                   {submitStatus === "error" && (
@@ -214,7 +214,6 @@ export default function ContactForm() {
                 <div className="absolute top-0 left-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl" />
                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl" />
               </form>
-          
           </div>
         </div>
       </div>
