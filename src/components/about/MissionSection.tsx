@@ -27,12 +27,12 @@ export default function MissionSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-high-contrast drop-shadow-lg">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6  drop-shadow-lg">
                 Our Mission
               </h2>
               <div className="h-1 w-20 bg-[var(--color-yellow)] shadow-glow" />
             </motion.div>
-            <p className="text-xl text-high-contrast leading-relaxed">
+            <p className="text-xl  leading-relaxed">
               To provide exceptional fuel and industrial solutions that empower businesses to thrive, while maintaining the highest standards of quality, reliability, and customer service.
             </p>
             <ul className="space-y-6">
@@ -82,8 +82,8 @@ export default function MissionSection() {
                   index={index}
                   variant="primary"
                   className="w-full"
-                  titleClassName="text-high-contrast mb-2 text-xl"
-                  descriptionClassName="text-high-contrast/90"
+                  titleClassName=" mb-2 text-xl"
+                  descriptionClassName="/90"
                 />
               ))}
             </ul>

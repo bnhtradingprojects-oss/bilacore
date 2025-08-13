@@ -49,7 +49,7 @@ export default function CoreValuesSection() {
 
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.h2 
-          className="text-4xl md:text-5xl font-bold text-center mb-16 text-high-contrast drop-shadow-text"
+          className="text-4xl md:text-5xl font-bold text-center mb-16  drop-shadow-text"
           initial={fadeIn.initial}
           animate={fadeIn.animate}
           transition={{ delay: 0.2 }}
@@ -67,7 +67,7 @@ export default function CoreValuesSection() {
               variant="primary"
               className="w-full"
               titleClassName="text-2xl font-bold mb-4 text-[var(--color-yellow-light)] drop-shadow-text"
-              descriptionClassName="text-high-contrast/90 text-lg leading-relaxed"
+              descriptionClassName="/90 text-lg leading-relaxed"
             />
           ))}
         </div>

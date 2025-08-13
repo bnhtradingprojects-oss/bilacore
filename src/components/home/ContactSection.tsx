@@ -29,8 +29,8 @@ export default function ContactSection() {
             transition={{ delay: 0.2, duration: 0.8 }}
           >
             <h2 className="text-5xl font-bold mb-6 text-[var(--color-yellow-light)] drop-shadow-glow">Get in Touch</h2>
-            <p className="text-xl text-high-contrast mb-12">We&apos;re here to power your success with premium fuel solutions.</p>
-            <div className="space-y-6 text-high-contrast">
+            <p className="text-xl  mb-12">We&apos;re here to power your success with premium fuel solutions.</p>
+            <div className="space-y-6 ">
               <motion.div 
                 className="flex items-center gap-4 glass-card p-4 rounded-xl border border-[var(--glass-border)] shadow-xl"
                 whileHover={{ x: 10 }}
@@ -84,19 +84,19 @@ export default function ContactSection() {
           >
             <form className="space-y-6">
               <div>
-                <label className="block text-sm font-medium text-high-contrast mb-2">Name</label>
+                <label className="block text-sm font-medium  mb-2">Name</label>
                 <input 
                   type="text" 
-                  className="w-full px-4 py-3 rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] text-high-contrast placeholder-white/60 focus:ring-2 focus:ring-[var(--color-yellow)] focus:border-transparent transition-all shadow-inner" 
+                  className="w-full px-4 py-3 rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)]  placeholder-white/60 focus:ring-2 focus:ring-[var(--color-yellow)] focus:border-transparent transition-all shadow-inner" 
                   required 
                   placeholder="Your name"
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-high-contrast mb-2">Email</label>
+                <label className="block text-sm font-medium  mb-2">Email</label>
                 <input 
                   type="email" 
-                  className="w-full px-4 py-3 rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)] text-high-contrast placeholder-white/60 focus:ring-2 focus:ring-[var(--color-yellow)] focus:border-transparent transition-all shadow-inner" 
+                  className="w-full px-4 py-3 rounded-xl bg-[var(--glass-bg)] border border-[var(--glass-border)]  placeholder-white/60 focus:ring-2 focus:ring-[var(--color-yellow)] focus:border-transparent transition-all shadow-inner" 
                   required 
                   placeholder="your.email@example.com"
                 />

@@ -22,7 +22,7 @@ export default function CTASection() {
         transition={{ duration: 0.8 }}
       >
         <motion.h2 
-          className="text-5xl font-bold text-high-contrast mb-6 drop-shadow-lg"
+          className="text-5xl font-bold  mb-6 drop-shadow-lg"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -31,7 +31,7 @@ export default function CTASection() {
           Ready to Transform Your Business?
         </motion.h2>
         <motion.p 
-          className="text-xl text-high-contrast mb-12"
+          className="text-xl  mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}

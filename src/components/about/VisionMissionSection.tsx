@@ -35,7 +35,7 @@ export default function VisionMissionSection() {
             variant="primary"
             className="w-full"
             titleClassName="text-3xl font-bold text-[var(--color-yellow-light)] drop-shadow-text"
-            descriptionClassName="text-high-contrast/90 text-lg leading-relaxed"
+            descriptionClassName="/90 text-lg leading-relaxed"
           />
           <FeatureCard
             title="Our Mission"
@@ -48,7 +48,7 @@ export default function VisionMissionSection() {
             variant="primary"
             className="w-full"
             titleClassName="text-3xl font-bold text-[var(--color-yellow-light)] drop-shadow-text"
-            descriptionClassName="text-high-contrast/90 text-lg leading-relaxed"
+            descriptionClassName="/90 text-lg leading-relaxed"
           />
         </motion.div>
       </div>

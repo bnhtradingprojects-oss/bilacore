@@ -25,10 +25,10 @@ export default function CompanyOverviewSection() {
             animate={fadeIn.animate}
             transition={{ delay: 0.2 }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-high-contrast drop-shadow-text mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold  drop-shadow-text mb-6">
               About Bilacore Petroleums
             </h2>
-            <p className="text-lg md:text-xl leading-relaxed text-high-contrast/90">
+            <p className="text-lg md:text-xl leading-relaxed /90">
               As a youth-owned and black-owned enterprise, Bilacore Petroleums PTY LTD 
               represents the future of South Africa&apos;s energy sector. Based in Lulekani, 
               Phalaborwa, we&apos;ve established ourselves as a trusted name in fuel and 
@@ -37,11 +37,11 @@ export default function CompanyOverviewSection() {
             <div className="grid grid-cols-2 gap-6">
               <div className="p-6 glass-card border border-[var(--glass-border)] shadow-xl rounded-lg text-center transform hover:scale-105 transition-all duration-300">
                 <div className="text-3xl font-bold text-[var(--color-yellow-light)] drop-shadow-glow">100%</div>
-                <div className="text-base text-high-contrast mt-2">Black-Owned</div>
+                <div className="text-base  mt-2">Black-Owned</div>
               </div>
               <div className="p-6 glass-card border border-[var(--glass-border)] shadow-xl rounded-lg text-center transform hover:scale-105 transition-all duration-300">
                 <div className="text-3xl font-bold text-[var(--color-yellow-light)] drop-shadow-glow">24/7</div>
-                <div className="text-base text-high-contrast mt-2">Support</div>
+                <div className="text-base  mt-2">Support</div>
               </div>
             </div>
           </motion.div>

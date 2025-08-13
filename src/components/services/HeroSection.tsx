@@ -24,7 +24,7 @@ export default function ServicesHero() {
             transition={{ duration: 1 }}
             className="relative inline-block"
           >
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 text-gradient-light">
+            <h1 className="text-6xl md:text-7xl font-bold mb-6 ">
               Our Services
             </h1>
             <div className="h-1 w-32 bg-[var(--color-yellow)] mx-auto transform -rotate-1" />

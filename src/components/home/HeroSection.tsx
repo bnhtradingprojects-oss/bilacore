@@ -38,7 +38,7 @@ export default function HeroSection() {
           transition={{ delay: 0.5, duration: 0.8 }}
           className="space-y-8"
         >
-          <h1 className="text-6xl md:text-8xl font-extrabold text-gradient-light leading-tight tracking-tight">
+          <h1 className="text-6xl md:text-8xl font-extrabold leading-tight tracking-tight">
             <motion.span
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -57,7 +57,7 @@ export default function HeroSection() {
             </motion.span>
           </h1>
           <motion.p 
-            className="text-2xl md:text-3xl text-high-contrast font-light max-w-3xl mx-auto"
+            className="text-2xl md:text-3xl  font-light max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.1, duration: 0.8 }}

@@ -66,13 +66,13 @@ export default function ServicesSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-high-contrast">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 ">
               Comprehensive Industrial Solutions
             </h2>
             <div className="h-1 w-20 bg-[var(--color-yellow)] mx-auto mb-8 shadow-glow" />
           </motion.div>
           <motion.p
-            className="text-xl md:text-2xl text-high-contrast max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl  max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

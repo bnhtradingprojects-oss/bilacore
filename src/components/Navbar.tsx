@@ -35,7 +35,7 @@ export default function Navbar() {
             />
           </div>
           <motion.span 
-            className="hidden sm:inline text-xl md:text-2xl font-extrabold tracking-tight text-high-contrast"
+            className="hidden sm:inline text-xl md:text-2xl font-extrabold tracking-tight "
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
@@ -72,7 +72,7 @@ export default function Navbar() {
             <Link
               key={item.path}
               href={item.path}
-              className="relative text-high-contrast hover:text-[var(--color-yellow-light)] transition-colors group text-lg"
+              className="relative  hover:text-[var(--color-yellow-light)] transition-colors group text-lg"
             >
               {item.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-[var(--color-yellow)] transition-all group-hover:w-full shadow-glow" />

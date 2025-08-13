@@ -19,7 +19,7 @@ export default function AboutHeroSection() {
           className="text-center space-y-8"
         >
           <motion.h1 
-            className="text-6xl md:text-7xl font-bold text-high-contrast drop-shadow-lg"
+            className="text-6xl md:text-7xl font-bold  drop-shadow-lg"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8 }}
@@ -27,7 +27,7 @@ export default function AboutHeroSection() {
             Our Story
           </motion.h1>
           <motion.p 
-            className="text-2xl md:text-3xl text-high-contrast max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md"
+            className="text-2xl md:text-3xl  max-w-3xl mx-auto font-light leading-relaxed drop-shadow-md"
             initial={{ y: 30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
