@@ -48,8 +48,7 @@ export default function WhatsApp() {
         <div className="absolute inset-0 [mask-image:radial-gradient(circle,_transparent_1px,_#000_1px)] [background-size:20px_20px] opacity-5" />
       </div>
 
-      <div className="relative z-10 w-full max-w-md bg-gray-800 rounded-xl shadow-lg p-8 space-y-6 border border-gray-700">
-        <div className="flex items-center space-x-4">
+     <section className="section-padding relative overflow-hidden"> <div className="flex items-center space-x-4">
           {/* WhatsApp Icon from a simple SVG for a clean look */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -92,7 +91,7 @@ export default function WhatsApp() {
             Send via WhatsApp
           </motion.button>
         </form>
-      </div>
+      </section>
     </div>
   );
 }
