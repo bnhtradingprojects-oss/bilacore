@@ -130,7 +130,7 @@ export default function ContactForm() {
               </div>
               <div className="absolute bottom-0 right-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl" />
             </motion.div>
-
+<WhatsApp/>
               {/* <form onSubmit={handleSubmit} className="glass-card p-8 rounded-2xl relative overflow-hidden">
                 <div className="relative z-10 space-y-6">
                   <div>
