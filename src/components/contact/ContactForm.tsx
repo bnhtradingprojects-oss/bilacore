@@ -1,7 +1,8 @@
-"use client";
+
 import { motion } from "framer-motion";
 import FeatureCard from "../ui/FeatureCard";
 import { useState, FormEvent } from "react";
+import WhatsApp from "./WhatsApp";
 
 interface FormData {
   fullName: string;
@@ -45,13 +46,13 @@ export default function ContactForm() {
     }));
   };
   return (
- <section className="py-24 px-4  text-white relative overflow-hidden">
+ <section className="p-4 text-white relative overflow-hidden">
       {/* Decorative Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-1/2 bg-[radial-gradient(circle_at_0%_0%,_var(--color-yellow)_0,_transparent_50%)] opacity-20" />
         <div className="absolute bottom-0 right-0 w-full h-1/2 bg-[radial-gradient(circle_at_100%_100%,_var(--color-yellow-dark)_0,_transparent_50%)] opacity-20" />
         <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-      </div> <div className="container mx-auto px-4">
+      </div> <div>
         <div className="max-w-6xl mx-auto">
           <motion.div
             className="text-center mb-16"
@@ -87,10 +88,10 @@ export default function ContactForm() {
                       </svg>
                     }
                     index={0}
-                    variant="secondary"
-                    className="w-full hover:translate-x-2 transition-transform duration-300"
-                    titleClassName="text-gray-100 font-medium mb-1"
-                    descriptionClassName="text-gray-200"
+                    className="h-full"
+              variant="primary"
+              titleClassName="text-[var(--color-yellow)] group-hover:text-white"
+              descriptionClassName="text-gray-300 group-hover:text-white"
                   />
                   <FeatureCard
                     title="Call Us"
@@ -101,36 +102,36 @@ export default function ContactForm() {
                       </svg>
                     }
                     index={1}
-                    variant="secondary"
-                    className="w-full hover:translate-x-2 transition-transform duration-300"
-                    titleClassName="text-gray-100 font-medium mb-1"
-                    descriptionClassName="text-gray-200"
+                    className="h-full"
+              variant="primary"
+              titleClassName="text-[var(--color-yellow)] group-hover:text-white"
+              descriptionClassName="text-gray-300 group-hover:text-white"
                   />
                   <FeatureCard
                  
                     title="Email Us"
                     description={
-                      <a href="mailto:admin@bilacorepetroleums.co.za" className="text-[var(--color-yellow)] hover:text-[var(--color-yellow-dark)] transition-colors">
+                      <a href="mailto:admin@bilacorepetroleums.co.za" className="text-[var(--color-yellow)] wrap-anywhere hover:text-[var(--color-yellow-dark)] transition-colors">
                         admin@bilacorepetroleums.co.za
                       </a>
                     }
                     icon={
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     }
                     index={2}
-                    variant="secondary"
-                    className="w-full hover:translate-x-2 transition-transform duration-300"
-                    titleClassName="text-gray-100 font-medium mb-1"
-                    descriptionClassName="text-gray-200"
+                   className="h-full"
+              variant="primary"
+              titleClassName="text-[var(--color-yellow)] group-hover:text-white"
+              descriptionClassName="text-gray-300 group-hover:text-white"
                   />
                 </div>
               </div>
               <div className="absolute bottom-0 right-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl" />
             </motion.div>
 
-              <form onSubmit={handleSubmit} className="glass-card p-8 rounded-2xl relative overflow-hidden">
+              {/* <form onSubmit={handleSubmit} className="glass-card p-8 rounded-2xl relative overflow-hidden">
                 <div className="relative z-10 space-y-6">
                   <div>
                     <label className="block text-base font-medium text-gray-100 mb-2">
@@ -219,7 +220,7 @@ export default function ContactForm() {
                 </div>
                 <div className="absolute top-0 left-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl" />
                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl" />
-              </form>
+              </form> */}
           </div>
         </div>
       </div>

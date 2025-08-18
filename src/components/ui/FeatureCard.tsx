@@ -34,7 +34,7 @@ export default function FeatureCard({
   };
   if(variant == 'secondary') {
      return ( 
-     <div className="rounded-md p-0.5 border border-yellow-500 border-md flex items-center justify-between space-x-3">
+     <div className="rounded-md p-2  flex items-center justify-start gap-4">
             <div className={`w-16 h-16  rounded-2xl bg-gradient-to-br ${gradients[variant].line} p-0.5 shadow-glow`}>
             <div className="w-full h-full rounded-2xl bg-[var(--glass-dark-bg)] flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">
               <div className="text-[var(--color-yellow-light)] group-hover:scale-110 transition-transform duration-300 drop-shadow-glow">
@@ -43,7 +43,7 @@ export default function FeatureCard({
             </div>
           </div>
        
-              <span className="text-white/90">    <h3 className={`text-2xl font-bold p-0  m-0 transition-colors duration-300 ${
+              <span className="text-white/90 wrap-break-word">    <h3 className={`text-2xl font-bold p-0  m-0 transition-colors duration-300 ${
             titleClassName || ' group-hover:text-[var(--color-yellow-light)]'
           }`}>
             {title}
