@@ -8,7 +8,7 @@ export default function Contact() {
     <main className="min-h-screen  pt-16">
       <HeroSection />
       <ContactForm />
-   
+   <WhatsApp/>
     </main>
   );
 }

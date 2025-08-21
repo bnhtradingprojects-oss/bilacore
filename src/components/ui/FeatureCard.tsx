@@ -61,7 +61,7 @@ export default function FeatureCard({
       transition={{ delay: index * 0.2, duration: 0.8 }}
       className={`group ${className}`}
     >
-      <div className="p-8 rounded-2xl relative overflow-hidden hover:scale-105 transition-all duration-500 border border-[var(--glass-border)] shadow-xl">
+      <div className="p-8 rounded-2xl bg-black/20 backdrop-blur-md relative overflow-hidden hover:scale-105 transition-all duration-500 border border-[var(--glass-border)] shadow-xl">
         <div className="relative z-10">
           <div className={`w-16 h-16 mb-8 rounded-2xl bg-gradient-to-br ${gradients[variant].line} p-0.5 shadow-glow`}>
             <div className="w-full h-full rounded-2xl bg-[var(--glass-dark-bg)] flex items-center justify-center transform group-hover:rotate-6 transition-transform duration-300">

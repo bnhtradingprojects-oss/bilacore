@@ -5,6 +5,7 @@ import ServicesSection from "@/components/home/ServicesSection";
 import CTASection from "@/components/home/CTASection";
 import ContactSection from "@/components/home/ContactSection";
 import ContactForm from "@/components/contact/ContactForm";
+import WhatsApp from "@/components/contact/WhatsApp";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <ServicesSection />
       <CTASection />
       <ContactForm />
+      <WhatsApp/>
     </main>
   );
 }

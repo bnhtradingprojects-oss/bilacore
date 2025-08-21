@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import WhatsAppButton from "../ui/Whatsapp";
 
 export default function ServicesList() {
   const services = [
@@ -82,7 +83,7 @@ export default function ServicesList() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
-              className="glass-card group rounded-md hover:scale-105 transition-all duration-500"
+              className="rounded-2xl bg-black/20 backdrop-blur-md relative overflow-hidden hover:scale-105 transition-all duration-500 border border-[var(--glass-border)] shadow-xl"
             >
               <div className="relative p-8">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[var(--color-yellow)]/5 rounded-full blur-2xl transform translate-x-8 -translate-y-8" />
@@ -100,7 +101,7 @@ export default function ServicesList() {
                   <p className="text-gray-200 mb-8 text-lg">
                     {service.description}
                   </p>
-                  <ul className="space-y-4">
+                  <ul className="space-y-4 mb-2">
                     {service.features.map((feature, i) => (
                       <motion.li 
                         key={i} 
@@ -121,6 +122,8 @@ export default function ServicesList() {
                       </motion.li>
                     ))}
                   </ul>
+                  <WhatsAppButton message={service.description} title={service.title} />
+                
                 </div>
               </div>
             </motion.div>
@@ -133,7 +136,7 @@ export default function ServicesList() {
           viewport={{ once: true }}
           transition={{ delay: 0.8 }}
         >
-          <a href="#contact" className="btn-primary">
+          <a href="/contact" className="group relative inline-flex items-center button-contrast px-8 py-4 rounded-xl shadow-xl overflow-hidden transform hover:scale-[0.98] transition-all duration-300">
             Request a Service
           </a>
         </motion.div>

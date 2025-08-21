@@ -21,7 +21,7 @@ export default function Navbar() {
       className="fixed w-full z-50 transition-colors duration-300 bg-black/85 backdrop-blur-md border-b border-[var(--glass-border)]"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.8 }}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
         <Link href="/" className="flex items-center gap-4 group">
