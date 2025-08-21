@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import WhatsAppButton from "../ui/Whatsapp";
 
 export default function ProductGrid() {
   const products = [
@@ -51,7 +52,7 @@ export default function ProductGrid() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.8 }}
-              className="glass-card rounded-xl shadow-lg overflow-hidden group"
+              className="rounded-2xl bg-black/20 backdrop-blur-md relative overflow-hidden hover:scale-105 transition-all duration-500 border border-[var(--glass-border)] shadow-xl"
             >
               <div className="relative h-64">
                 <Image
@@ -68,7 +69,7 @@ export default function ProductGrid() {
                 <h3 className="text-2xl font-bold mb-3">{product.name}</h3>
                 <p className="text-gray-200 mb-4">{product.description}</p>
                 <div className="space-y-2">
-                  <h4 className="font-semibold text-black">Key Features:</h4>
+                  <h4 className="font-semibold text-yellow-500">Key Features:</h4>
                   <ul className="grid grid-cols-2 gap-2">
                     {product.features.map((feature, i) => (
                       <li key={i} className="flex items-center text-gray-200">
@@ -79,10 +80,10 @@ export default function ProductGrid() {
                       </li>
                     ))}
                   </ul>
+                <WhatsAppButton  message={product.description} title={product.name} />
                 </div>
-                <button className="mt-6 w-full bg-yellow-500/95 text-black py-2 rounded-lg font-semibold hover:bg-yellow-400 transition-colors">
-                  Request Quote
-                </button>
+
+               
               </div>
             </motion.div>
           ))}
