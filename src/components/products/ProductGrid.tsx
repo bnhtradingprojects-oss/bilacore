@@ -80,7 +80,9 @@ export default function ProductGrid() {
                       </li>
                     ))}
                   </ul>
-                <WhatsAppButton  message={product.description} title={product.name} />
+              <WhatsAppButton  
+               message={`Hello, I would like to request a quotation for:\n\n*Product:* ${product.name}\n*Category:* ${product.category}\n*Description:* ${product.description}\n\nPlease provide me with pricing, availability, and delivery details.\n\nThank you.`}
+               title={product.name} />
                 </div>
 
                
