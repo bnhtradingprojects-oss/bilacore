@@ -122,7 +122,11 @@ export default function ServicesList() {
                       </motion.li>
                     ))}
                   </ul>
-                  <WhatsAppButton message={service.description} title={service.title} />
+                  <WhatsAppButton
+  message={`Hello, I am interested in your service:\n\n*Service:* ${service.title}\n*Description:* ${service.description}\n\n*Key Features:*\n${service.features.map(f => `• ${f}`).join("\n")}\n\nPlease share more details, pricing, and availability.\n\nThank you.`}
+  title={service.title}
+/>
+
                 
                 </div>
               </div>
